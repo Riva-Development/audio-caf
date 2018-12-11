@@ -20,13 +20,10 @@ enum audio_event_type {
     AUDIO_EVENT_SSR,
     AUDIO_EVENT_NUM_ST_SESSIONS,
     AUDIO_EVENT_READ_SAMPLES,
-<<<<<<< HEAD
     AUDIO_EVENT_DEVICE_CONNECT,
     AUDIO_EVENT_DEVICE_DISCONNECT,
     AUDIO_EVENT_SVA_EXEC_MODE,
     AUDIO_EVENT_SVA_EXEC_MODE_STATUS,
-=======
->>>>>>> 33249a2b... hal: Haxed soundtrigger header
 };
 
 enum sound_trigger_event_type {
@@ -57,10 +54,7 @@ struct audio_event_info {
     union {
         enum ssr_event_status status;
         int value;
-<<<<<<< HEAD
         void *str_value;
-=======
->>>>>>> 33249a2b... hal: Haxed soundtrigger header
         struct sound_trigger_session_info ses_info;
         struct audio_read_samples_info aud_info;
     }u;
